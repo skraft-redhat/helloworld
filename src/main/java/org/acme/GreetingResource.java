@@ -8,9 +8,14 @@ import javax.ws.rs.core.MediaType;
 @Path("/hello")
 public class GreetingResource {
 
+    /**
+     * Endpoint for Greeting.
+     *
+     * @return String
+      */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello v10";
+        return "Hello Szabi!";
     }
 }
