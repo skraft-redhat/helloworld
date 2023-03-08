@@ -1,7 +1,7 @@
 import logging
 from locust import HttpUser, task, events
 
-class getCat(HttpUser):
+class getHello(HttpUser):
   @task
   def cat(self):
       self.client.get("/hello", verify=False)
